@@ -1,0 +1,14 @@
+{% extends 'servicios/base.html' %}
+
+{% block title %}Detalle de Instalación{% endblock %}
+
+{% block content %}
+<h2>Detalle de Instalación</h2>
+<p>Cliente: {{ instalacion.cliente }}</p>
+<p>Tipo de Fibra: {{ instalacion.tipo_fibra }}</p>
+<p>Router Bicanal: {{ instalacion.router_bicanal }}</p>
+<p>Extensor Wifi: {{ instalacion.extensor_wifi }}</p>
+<p>Fecha de Instalación: {{ instalacion.fecha_instalacion }}</p>
+<p>Hora de Instalación: {{ instalacion.hora_instalacion }}</p>
+<p>Comentario Adicional: {{ instalacion.comentario_adicional }}</p>
+{% endblock %}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Fibra Óptica{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Servicio de Instalación de Fibra Óptica</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Inicio</a></li>
+                <li><a href="{% url 'registrar_cliente' %}">Registrar Cliente</a></li>
+                <li><a href="{% url 'registrar_instalacion' %}">Registrar Instalación</a></li>
+                <li><a href="{% url 'lista_instalaciones' %}">Lista de Instalaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
